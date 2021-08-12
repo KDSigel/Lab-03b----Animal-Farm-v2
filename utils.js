@@ -1,19 +1,23 @@
-const horseSound = document.getElementById('horse-sound');
-const dogSound = document.getElementById('dog-sound');
-const catSound = document.getElementById('cat-sound');
+// import { timeoutAnimalText } from './timeout.js';
 
-const animalNameDisplay = document.getElementById('animal-name');
+// const horseSound = document.getElementById('horse-sound');
+// const dogSound = document.getElementById('dog-sound');
+// const catSound = document.getElementById('cat-sound');
 
-export function theHorseSoundAndText() {
-    horseSound.play();
-    animalNameDisplay.textContent = 'This is a horse';
-}
+// const animalNameDisplay = document.getElementById('animal-name');
 
-export function theDogSoundAndText() {
-    dogSound.play();
-    animalNameDisplay.textContent = 'This is a dog';
-}
-export function theCatSoundAndText() {
-    catSound.play();
-    animalNameDisplay.textContent = 'This is a cat. If it were as big as a dog or horse, it would kill you.';
-}
+// export function theHorseSoundAndText() {
+//     horseSound.play();
+//     animalNameDisplay.textContent = 'This is a horse';
+//     timeoutAnimalText();
+// }
+// export function theDogSoundAndText() {
+//     dogSound.play();
+//     animalNameDisplay.textContent = 'This is a dog';
+//     timeoutAnimalText();
+// }
+// export function theCatSoundAndText() {
+//     catSound.play();
+//     animalNameDisplay.textContent = 'This is a cat. If it were as big as a dog or horse, it would kill you.';
+//     timeoutAnimalText();
+// }

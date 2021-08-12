@@ -1,33 +1,60 @@
 
-import { theHorseSoundAndText, theDogSoundAndText, theCatSoundAndText } from './utils.js';
+// import { playSoundAndChangeText, theHorseSoundAndText, theDogSoundAndText, theCatSoundAndText } from './utils.js';
+
+import { timeoutAnimalText } from './timeout.js';
 
 const horseEl = document.getElementById('horse-image');
 const dogEl = document.getElementById('dog-image');
 const catEl = document.getElementById('cat-image');
 
-horseEl.addEventListener('click', () => {
-    theHorseSoundAndText();
-});
+const horseSound = document.getElementById('horse-sound');
+const dogSound = document.getElementById('dog-sound');
+const catSound = document.getElementById('cat-sound');
 
-dogEl.addEventListener('click', () => {
-    theDogSoundAndText();
-});
+const animalNameDisplay = document.getElementById('animal-name');
 
-catEl.addEventListener('click', () => {
-    theCatSoundAndText();
-});
+function playSoundAndChangeText(sound, animalName) {
+  sound.play();
+  animalNameDisplay.textContent = animalName;
+  timeoutAnimalText();
+  }
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'd') {
-        theDogSoundAndText();
-    }});
+  horseEl.addEventListener('click', () => {
+    playSoundAndChangeText(horseSound, 'This is a horse');
+  });
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'h') {
-        theHorseSoundAndText();
-    }});
+  dogEl.addEventListener('click', () => {
+    playSoundAndChangeText(dogSound, 'This is a dog');
+  });
 
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'c') {
-        theCatSoundAndText();
-    }});
+  catEl.addEventListener('click', () => {
+    playSoundAndChangeText(catSound, 'This is a cat. If it were the size of a dog or horse, it would kill you.');
+  });
+
+// horseEl.addEventListener('click', () => {
+//     theHorseSoundAndText();
+// });
+
+// dogEl.addEventListener('click', () => {
+//     theDogSoundAndText();
+// });
+
+// catEl.addEventListener('click', () => {
+//     theCatSoundAndText();
+// });
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.key === 'd') {
+//         theDogSoundAndText();
+//     }});
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.key === 'h') {
+//         theHorseSoundAndText();
+//     }});
+
+// document.addEventListener('keydown', function(event) {
+//     if (event.key === 'c') {
+//         theCatSoundAndText();
+//     }});
+      
