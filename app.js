@@ -21,12 +21,12 @@ const catSound = document.getElementById('cat-sound');
   });
 
   document.addEventListener('keydown', function(event) {
-    if (event.key === 'd') {
+    if (event.key === 'h') {
         playSoundAndChangeText(horseSound, 'This is Hoff');
     }});
 
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'h') {
+    if (event.key === 'p') {
         playSoundAndChangeText(dogSound, 'This is Paris');
     }});
 
