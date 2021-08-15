@@ -1,10 +1,10 @@
 
-const animalNameDisplay = document.getElementById('animal-name');
+const animalNameDisplay = document.getElementById('celeb-name');
 
 export function playSoundAndChangeText(sound, animalName) {
     sound.play();
     animalNameDisplay.textContent = animalName;
     setTimeout(() => {
-        animalNameDisplay.textContent = 'Animals are awesome!';
-    }, 2000);
+        animalNameDisplay.textContent = 'Celebs are awesome!';
+    }, 3000);
 }
