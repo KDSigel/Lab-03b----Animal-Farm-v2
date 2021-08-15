@@ -6,6 +6,8 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     background-image: url("../assets/holly.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
