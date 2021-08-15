@@ -6,5 +6,5 @@ export function playSoundAndChangeText(sound, animalName) {
     animalNameDisplay.textContent = animalName;
     setTimeout(() => {
         animalNameDisplay.textContent = 'Celebs are awesome!';
-    }, 2000);
+    }, 5000);
 }
