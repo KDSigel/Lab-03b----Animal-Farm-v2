@@ -62,9 +62,9 @@ footer {
 }
 
 img {
-    width: 300px;
-    height: 300px;
-    padding: 2rem;
+    width: 300%;
+    height: 300%;
+    padding: 10px;
   }
   
 footer {
