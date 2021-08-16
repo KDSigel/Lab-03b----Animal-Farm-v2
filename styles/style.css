@@ -49,6 +49,8 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -69,6 +71,8 @@ footer {
     box-shadow: var(--shadow);
     padding-right: 10px;
     padding-bottom: 30px;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section img {
